@@ -135,14 +135,21 @@ border-spacing: 0;
 }
 
 .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons_images{
     background-color: #3d3d3d;
-    border-radius: 0%;
-    
-    
+    border: #3d3d3d;
+    height: 30px;
 }
 
 .icon_buttons{
-    cursor:grab;
+    cursor:pointer;
+    border: none;
+    padding: 0;
 }
 
 
