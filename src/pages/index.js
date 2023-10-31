@@ -36,7 +36,7 @@ export default function Home() {
 
       <div class = "footer">
         <div>
-          <button class = "icon_buttons"><img class = "icons" src="/img/pokemon-logo.png" alt="logo ide"/></button>
+          <button class = "icon_buttons"><img class = "icons" src="/img/pokemon-logo.png" alt="pokemon logo"/></button>
         </div>
 
         <div>
