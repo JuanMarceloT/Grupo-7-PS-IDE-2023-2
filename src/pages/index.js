@@ -3,12 +3,12 @@ export default function Home() {
     <div>
       <div class="container1">
         <div class="header">
-            <p>HOME</p>
+            <a href="#home">HOME</a>
             <p>INICIAIS</p>
             <p>SOBRE</p>
-            <p>FORMULARIO</p>
+            <a href="#form">FORMULARIO</a>
         </div>
-        <div class="titulo-imagem">
+        <div class="titulo-imagem" id='home'>
           <img class="neko1" src="/img/neko-anotando.png" alt="logo ide"/>
           <div class="titulo">
             <p>POKE</p>
@@ -23,7 +23,7 @@ export default function Home() {
 
 
 
-      <div class = "form_table">
+      <div class = "form_table" id='form'>
         <h1 class = "form_title">
           Envie uma mensagem para nós
         </h1>

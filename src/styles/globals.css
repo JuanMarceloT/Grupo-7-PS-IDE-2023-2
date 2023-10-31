@@ -76,7 +76,6 @@ border-spacing: 0;
     font-weight: bold;
     justify-content:space-evenly;
     align-items: center;
-    
 }
 
 .start_button{
@@ -160,4 +159,9 @@ border-spacing: 0;
 @font-face {
     font-family: IDE;
     src: url('/fonts/uni05_53.ttf');
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
