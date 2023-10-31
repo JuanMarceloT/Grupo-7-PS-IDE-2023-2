@@ -4,7 +4,7 @@
     font-family: IDE;
     margin-top: 200px;
     padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-bottom: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,4 +37,21 @@
 .footer_text{
     margin-top: 1vh;
     margin-bottom: 1vh;
+}
+
+
+.footer2{
+    width: 100%;
+    background-color: #3d3d3d;
+    color: aliceblue;
+    font-family: IDE;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.logo_ide{
+    padding-right: 3vw;
 }
