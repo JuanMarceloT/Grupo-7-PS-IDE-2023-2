@@ -1,0 +1,23 @@
+.tituloimagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92, 0, 128);
+    padding: 50px;
+    height: 100vh;
+    gap: 16px;
+}
+.neko1{
+    max-width: 50vw;
+    height: auto;
+}
+.titulo{
+    font-size: 200px;
+    color: white;
+    text-shadow: 9px 9px 4px black;
+    font-family: IDE;
+}
+
+.start_button{
+    padding: 10vw;
+}

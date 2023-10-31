@@ -1,3 +1,4 @@
+import Style from '../styles/footer.module.css'
 export default function Footer(){
   return(
   <div class = "footer">
@@ -24,5 +25,6 @@ export default function Footer(){
       Logo ide
     </div>
     
-  </div>)
+  </div>
+  )
 }
