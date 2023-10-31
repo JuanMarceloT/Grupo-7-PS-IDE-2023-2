@@ -22,9 +22,14 @@
 }
 
 .icons_images{
+    transition: transform 0.7s;
     background-color: #3d3d3d;
     border: #3d3d3d;
     height: 4vh;
+}
+
+.icons_images:hover{
+    transform: scale(1.08);
 }
 
 .icon_buttons{
@@ -38,7 +43,6 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
-
 
 .footer2{
     width: 100%;
