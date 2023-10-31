@@ -18,6 +18,9 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+.form:hover{
+    border-color: black;
+}
 
 .form_submit{
     font-family: IDE;  
@@ -31,5 +34,9 @@
     width: 36vw;
     cursor: pointer;
     border-width: 1px;
+}
+
+.form_submit:hover{
+    border-color: black;
 }
 
