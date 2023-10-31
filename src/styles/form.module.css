@@ -1,0 +1,39 @@
+
+
+.form_table{
+    font-family: IDE;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form_title{
+    color: #580a58;
+    margin-top: 20vh;
+    padding-bottom: 3vh;
+}
+.form{
+    font-family: IDE;   
+    border-color: #580a58;
+    font-size: 16px;
+    width: 60vw;
+    height: 50px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.form_submit{
+    font-family: IDE;   
+    border-color: #580a58;
+    font-size: 16px;
+    width: 36vw;
+    height: 50px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: #580a58;
+}
+
+
+::placeholder{
+    color: #580a58;
+}

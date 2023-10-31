@@ -1,0 +1,37 @@
+
+.footer{
+    background-color: #3d3d3d;
+    color: aliceblue;
+    font-family: IDE;
+
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    gap: 2vw;
+}
+
+.icons_images{
+    background-color: #3d3d3d;
+    border: #3d3d3d;
+    height: 30px;
+}
+
+.icon_buttons{
+    cursor:pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
