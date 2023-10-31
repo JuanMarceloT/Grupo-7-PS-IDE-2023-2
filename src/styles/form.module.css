@@ -14,20 +14,22 @@
     font-family: IDE;   
     font-size: 16px;
     width: 60vw;
-    height: 50px;
+    height: 5vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
 .form_submit{
-    font-family: IDE;   
-    border-color: #580a58;
+    font-family: IDE;  
+    background-color: white; 
     font-size: 16px;
-    width: 36vw;
-    height: 50px;
+    width: 60vw;
+    height: 5vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
     color: #580a58;
+    width: 36vw;
+    cursor: pointer;
+    border-width: 1px;
 }
-
 

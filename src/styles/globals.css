@@ -56,4 +56,5 @@ a{
 }
 ::placeholder{
     color: #580a58;
+    opacity: 50%;
 }
