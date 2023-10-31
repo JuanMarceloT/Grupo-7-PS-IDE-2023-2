@@ -50,3 +50,6 @@ border-spacing: 0;
     font-family: IDE;
     src: url('/fonts/uni05_53.ttf');
 }
+::placeholder{
+    color: #580a58;
+}
