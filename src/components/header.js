@@ -1,10 +1,10 @@
 export default function Header(){
     return(
-        <div class="header">
-                <p>HOME</p>
+        <div className ={Style.header}>
+                <a href="#home">HOME</a>
                 <p>INICIAIS</p>
                 <p>SOBRE</p>
-                <p>FORMULARIO</p>
+                <a href="#form">FORMULARIO</a>
             </div>
     )
 }

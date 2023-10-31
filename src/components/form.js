@@ -11,7 +11,7 @@ export default function Form() {
   };
   
   return(
-<div class = "form_table">
+<div class = "form_table" id="form">
         <h1 class = "form_title">
           Envie uma mensagem para nós
         </h1>

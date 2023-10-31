@@ -16,6 +16,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure,
@@ -41,7 +42,10 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
 
 #ide-vermelho{
     color: red;
@@ -49,4 +53,7 @@ border-spacing: 0;
 @font-face {
     font-family: IDE;
     src: url('/fonts/uni05_53.ttf');
+}
+::placeholder{
+    color: #580a58;
 }
