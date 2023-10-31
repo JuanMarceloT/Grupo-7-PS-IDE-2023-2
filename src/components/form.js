@@ -20,8 +20,7 @@ export default function Form() {
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
-    
-    // Email validation
+
     if (!value.includes('@')) {
       setEmailError('Email must contain "@"');
     } else {
