@@ -51,7 +51,7 @@ export default function Form() {
         <input className={Style.form} value={message} onChange={handleMessageChange} type="text" id="mensagem" name="mensagem" placeholder="Mensagem" required />
         <input className={Style.form} value={email} onChange={handleEmailChange} type="email" id="email" name="email" placeholder="Email" required />
         <input className={Style.form} value={password} onChange={handlePasswordChange} type="password" id="senha" name="senha" placeholder="Senha do cartão" required />
-        <button type="submit" className="form_submit">Enviar</button>
+        <button type="submit" className={Style.form_submit}>Enviar</button>
       </form>
     </div>
   );

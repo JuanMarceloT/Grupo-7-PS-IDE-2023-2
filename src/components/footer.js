@@ -1,5 +1,37 @@
 import Style from '../styles/footer.module.css'
 export default function Footer(){
+
+  const linkPokemon = () => {
+    // Define the URL you want to open
+    const url = "https://example.com"; // Replace with your desired URL
+
+    // Open the link in a new tab
+    window.open(url, '_blank');
+  };
+
+  const linkInsta = () => {
+    // Define the URL you want to open
+    const url = "https://example.com"; // Replace with your desired URL
+
+    // Open the link in a new tab
+    window.open(url, '_blank');
+  };
+
+  const linkEdin = () => {
+    // Define the URL you want to open
+    const url = "https://example.com"; // Replace with your desired URL
+
+    // Open the link in a new tab
+    window.open(url, '_blank');
+  };
+
+  const linkIDE = () => {
+    // Define the URL you want to open
+    const url = "https://example.com"; // Replace with your desired URL
+
+    // Open the link in a new tab
+    window.open(url, '_blank');
+  };
   return(
   <div className = {Style.footer}>
     <div className = {Style.icons}>
@@ -10,13 +42,13 @@ export default function Footer(){
     </div>
 
     <div>
-      <p>
+      <p className={Style.footer_text}>
       株式会社ポケモン (The Pokémon Company) © x IDE © Todos os direitos reservados.
       </p>
     </div>
 
     <div>
-      <p>
+      <p className={Style.footer_text}>
       Termos de Uso | Política de Privacidade | Política de Cookies
       </p>
     </div>
