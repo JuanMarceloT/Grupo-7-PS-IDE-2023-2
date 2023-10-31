@@ -56,4 +56,13 @@ a{
 }
 ::placeholder{
     color: #580a58;
+    opacity: 50%;
+}
+
+#start{
+    display:flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }

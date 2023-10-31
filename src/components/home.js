@@ -1,4 +1,5 @@
 import Style from '../styles/home.module.css'
+import Style2 from '../styles/borders.module.css'
 export default function Home() {
     return (
         <div className={Style.tituloimagem} id='home'>
@@ -6,7 +7,7 @@ export default function Home() {
             <div className={Style.titulo}>
                 <p>POKE</p>
                 <p><spam id="ide-vermelho">IDE</spam>X</p>
-                <button className= {Style.border}>Start</button>
+                <a href='#form' id='start' className={Style2.after}>START</a>
             </div>
         </div>
     )
