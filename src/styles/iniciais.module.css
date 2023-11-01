@@ -1,0 +1,93 @@
+
+
+.container {
+    padding: 3% 10%;
+    color: #603B88;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 6px solid #603B88;;
+    border-radius: 30px;
+}
+
+.nekoContainer {
+    border-right: 6px solid #603B88;;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nekoContainer img{
+    width: 50%;   
+}
+.nekoContainer h1{
+   padding: 5% 0px;  
+} 
+
+.mainText h1 {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+}
+
+.textContainer {
+    padding: 1rem; /* Adicionei um padding para espaçamento interno */
+}
+
+.bottomContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2% 0%;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.buttonsContainer button {
+    display: inline-block;
+    
+    border: none;
+    cursor: pointer;
+    
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(37, 23, 23); 
+    padding: 10px 20px;
+    font-size: 11px;
+    margin: 5px;
+  }
+ 
+  
+  .button-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+.buttonsContainer img {
+    width: 100%;
+}
+
+
+.IDEButtonContainer a{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid #603B88;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 25px;  
+    width: 100%;
+    padding: 5px; 
+    box-sizing: border-box; 
+    max-width: 100%; 
+}
+.IDEButtonContainer img{
+    width: 17%;
+    padding: 2%;
+}

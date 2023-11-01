@@ -16,6 +16,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+font-family: uni05_53;
 }
 
 article, aside, details, figcaption, figure,
@@ -39,4 +40,9 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'uni05_53'; 
+    src: url('../../public/fonts/uni05_53.ttf') format('truetype'); 
 }
