@@ -7,7 +7,7 @@ export default function Home() {
             <div className={Style.titulo}>
                 <p>POKE</p>
                 <p><spam id="ide-vermelho">IDE</spam>X</p>
-                <a href='#form' id='start' className={Style2.after}>START</a>
+                <a href='#form' id='start' className={Style2.pixelCornersDescription}>START</a>
             </div>
         </div>
     )
