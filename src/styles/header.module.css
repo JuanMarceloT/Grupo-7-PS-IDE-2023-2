@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     font-size: 40px;
+    font-weight: bold;
     z-index: 999;
     height: 100px;
     width: 100vw;

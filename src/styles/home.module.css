@@ -7,6 +7,7 @@
     height: 100vh;
     width: auto;
     gap: 16px;
+    font-weight: bold;
 }
 .neko1{
     max-width: 50vw;
