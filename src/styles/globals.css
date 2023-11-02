@@ -67,4 +67,5 @@ a{
     align-items: center;
     height: 100px;
     padding-bottom: 20px;
+    border: 4px solid white;
 }
