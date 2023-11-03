@@ -1,24 +1,49 @@
 
 
 .container {
-    padding: 3% 10%;
+    padding: 3% 10vw;
     color: #603B88;
+    display: grid;
+    width: 80vw;
+    grid-template-rows: 20vh 50vh 5vh;
+
 }
 
 .mainContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 6px solid #603B88;;
+    grid-row: 3fr 1fr;
     border-radius: 30px;
 }
 
 .nekoContainer {
-    border-right: 6px solid #603B88;;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.cardscontainer{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px;  
+
+    margin: 0 auto;
+}
+.card {
+    border-radius: 20px;
+    width: 5vw; 
+    height: 5vw; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.card img{
+    max-width:2.5vw; 
+    height: auto; 
 }
 .nekoContainer img{
     width: 50%;   
@@ -27,6 +52,10 @@
    padding: 5% 0px;  
 } 
 
+.mainText{
+
+    width: 100%;
+}
 .mainText h1 {
     width: 100%;
     font-size: 70px;
@@ -34,7 +63,11 @@
 }
 
 .textContainer {
-    padding: 1rem; /* Adicionei um padding para espaçamento interno */
+    padding: 4vh 3vw;
+}
+.textContainer h1 {
+    font-size: 20px;
+    padding: 2vh 3vw;
 }
 
 .bottomContent {
@@ -44,32 +77,28 @@
 }
 
 .buttonsContainer {
+
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+
 }
 .buttonsContainer button {
-    display: inline-block;
-    
+
     border: none;
     cursor: pointer;
-    
     background-color: rgba(240, 248, 255, 0);
-    color: rgb(37, 23, 23); 
-    padding: 10px 20px;
-    font-size: 11px;
-    margin: 5px;
-  }
+    padding: 0px;
+    font-size: 9px;    
+}
+
  
-  
-  .button-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+
 .buttonsContainer img {
-    width: 100%;
+    width: 60%;
+}
+
+.IDEButtonContainer img{
+    padding: 15px;
+    width: 12%;
 }
 
 
@@ -81,13 +110,41 @@
     text-decoration: none;
     border: 2px solid #603B88;
     background-color: rgba(240, 248, 255, 0);
-    border-radius: 25px;  
-    width: 100%;
-    padding: 5px; 
+ 
+    padding: 10px; 
     box-sizing: border-box; 
-    max-width: 100%; 
+    width: 100%;
+    height: 12vh;
 }
-.IDEButtonContainer img{
-    width: 17%;
-    padding: 2%;
-}
+.buttonsContainer button, .card {
+    transition: transform 0.3s ease; 
+  }
+  
+  .buttonsContainer button:hover, .card:hover {
+    transform: scale(1.2); 
+  }
+ 
+  .nekoStats img{
+    width: 20vw;
+    height: auto;
+  }
+
+
+  .nekoStats{
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+  }
+  .AtributesContainer{
+    min-width: 12vw;
+  }
+  .atributos img{
+    max-width: 2vw;
+    padding: 2px;
+    transition: transform 0.5s; 
+  }
+
+ 
+  
+  .atributos img:hover {
+    transform: translateY(-20px); }
