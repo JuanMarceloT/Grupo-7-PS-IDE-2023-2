@@ -51,8 +51,12 @@ a{
     color: rgb(197, 37, 90)
 }
 @font-face {
-    font-family: IDE;
+    font-family: IDE1;
     src: url('/fonts/uni05_53.ttf');
+}
+@font-face {
+    font-family: IDE2;
+    src: url('/fonts/PressStart2P-Regular.ttf');
 }
 ::placeholder{
     color: #580a58;
@@ -62,10 +66,10 @@ a{
 #start{
     display:flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 30px;
     align-items: center;
     height: 100px;
-    padding-bottom: 20px;
     border: 4px solid white;
+    text-shadow: 3px 3px 0px black;
 }

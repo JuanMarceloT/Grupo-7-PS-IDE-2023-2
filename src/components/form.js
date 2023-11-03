@@ -44,7 +44,7 @@ export default function Form() {
   return (
     <div className={Style.form_table} id='form'>
       <h1 className={Style.form_title}>
-        Envie uma mensagem para nós
+        Envie uma mensagem para nós:
       </h1>
       <form className={Style.form_table} onSubmit={handleSubmit}>
         <input className={Style.form} value={userInput} onChange={handleInputChange} type="text" id="pokemon favorito" name="pokemon favorito" placeholder="Pokemon Favorito" required />
