@@ -1,7 +1,19 @@
-export default function Home() {
+import Home from '../components/home'
+import Form from '../components/form'
+import Footer from '../components/footer'
+import Header from '../components/header'
+
+
+export default function Main() {
+  
+
   return (
-    <h1>
-      Olá, mundo!
-    </h1>
+      <>
+        <Header/>
+        <Home/>
+        <Form/>
+        <Footer/>
+      
+      </>
   )
 }

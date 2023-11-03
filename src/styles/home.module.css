@@ -1,0 +1,21 @@
+.tituloimagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 54, 125);
+    padding: 70px;
+    height: 100vh;
+    width: auto;
+    gap: 16px;
+}
+.neko1{
+    max-width: 50vw;
+    height: auto;
+}
+.titulo{
+    font-size: 200px;
+    color: white;
+    text-shadow: 6px 8px 0px black;
+    font-family: IDE;
+    margin-top: 70px;
+}

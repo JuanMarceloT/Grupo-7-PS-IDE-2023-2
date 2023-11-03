@@ -16,6 +16,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure,
@@ -39,4 +40,30 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#ide-vermelho{
+    color: rgb(197, 37, 90)
+}
+@font-face {
+    font-family: IDE;
+    src: url('/fonts/uni05_53.ttf');
+}
+::placeholder{
+    color: #580a58;
+    opacity: 50%;
+}
+
+#start{
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 30px;
+    align-items: center;
+    height: 150px;
 }
