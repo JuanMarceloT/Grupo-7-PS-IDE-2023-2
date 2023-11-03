@@ -42,7 +42,7 @@ export default function Iniciais(){
                         <PokemonsCards info={pokemons[tipo]}/>
                     </div>
                 )
-                 : <div className={Style.nekoContainer} style={{bordersRight : '2px solid #603B88'}}>
+                 : <div className={Style.nekoContainer} style={{borderRight : '2px solid #603B88'}}>
                         <h1>
                             <strong>ESCOLHA UM!</strong>
                         </h1>
