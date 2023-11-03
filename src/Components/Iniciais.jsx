@@ -3,7 +3,10 @@ import pokemons from "@/../content/pokemons.json";
 import borders from "@/styles/borders.module.css"
 import React, { useState, useEffect } from 'react';
 import { getBorderClassByColor, getBorderClassByType } from '../utils/borderUtils';
-
+import Agua from "@img/agua";
+import Fogo from "@img/fogo";
+import Planta from "@img/planta"
+import { ST } from "next/dist/shared/lib/utils";
 
 export default function Iniciais(){
 
@@ -44,16 +47,16 @@ export default function Iniciais(){
                 )
                  : <div className={Style.nekoContainer} style={{borderRight : '2px solid #603B88'}}>
                         <h1>
-                            <strong>ESCOLHA UM!</strong>
+                            ESCOLHA UM!
                         </h1>
                         <img src="./img/neko-dormindo.png" alt="" />
                     </div>
                  }
                  {tipo != null ? (
-                    <div className={Style.nekoStats} >
-                        <SuperEfetivo info={pokemons[tipo]}/>
-                        <img src="./img/neko-piscando.png"/>
+                     <div className={Style.nekoStats} >
                         <Fraquezas info={pokemons[tipo]}/>
+                        <img src="./img/neko-piscando.png"/>
+                        <SuperEfetivo info={pokemons[tipo]}/>
                     </div>
                 )
                  : 
@@ -75,12 +78,12 @@ export default function Iniciais(){
             </div>
             <div className={Style.bottomContent}>
                 <div className={Style.buttonsContainer}>
-                        <BtnTipos tipo="Agua" id={1} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
-                        <BtnTipos tipo="Planta" id={2} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
-                        <BtnTipos tipo="Fogo" id={3} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
+                        <BtnTipos tipo="AGUA" id={1} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
+                        <BtnTipos tipo="PLANTA" id={2} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
+                        <BtnTipos tipo="FOGO" id={3} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
                 </div>
                 {tipo != null ? (
-                    <div className={`${Style.IDEButtonContainer} ${borders.pixelCornersDescription} ${getBorderClassByType(tipo)}`} style={{width: '80%', margin: '0 auto'}}>
+                    <div className={`${Style.IDEButtonContainer} ${borders.pixelCornersDescription} ${getBorderClassByType(tipo)}`} style={{height: '70%', width: '80%', margin: '0 auto' , display: 'flex', justifyContent: 'center', alignItems:'center', color: 'black'}}>
                     <a  style={{margin: '20px 10px'}}>
                         {pokemons[tipo].description}
                     </a>
@@ -102,9 +105,13 @@ export default function Iniciais(){
 
 function BtnTipos(props) {
     return (
-        <button onClick={() => props.BtnState === props.id ? props.setBtnState(null) : props.setBtnState(props.id)} style={{ color: props.menu != 1 ? 'transparent' : '#603B88'}}>
-            <h1>{props.tipo}</h1>
-            <img src={`./img/Tipos/${props.tipo}_longo.png`} alt={props.tipo} style={{colorAdjust: ``}}/>
+        <button onClick={() => props.BtnState === props.id ? props.setBtnState(null) : props.setBtnState(props.id)} style={{ color: props.menu != 1 ? 'transparent' : '#603B88', width: '100%', margin: '30px 10px'}}>
+            <p style={{fontSize: '20px'}}>{props.tipo}</p>
+            <div className={`${borders.pixelCorners} ${props.BtnState == null ? borders.purple : getBorderClassByType(`${props.BtnState == 1 ? 'AGUA' : props.BtnState == 2 ? 'PLANTA' : 'FOGO'}`)}`} style={{height: '6vh',width: '90%', background: `${props.BtnState === props.id ? `${pokemons[props.tipo].mainColor}` : 'white'}`, display: 'flex', justifyContent: 'center', alignItems:'center'}}>
+                {props.tipo == 'AGUA' && <Agua fill={props.BtnState === props.id ? 'white' : `${props.BtnState == 1 ? '#3B6388' : props.BtnState == 2 ? '#3B8863' : props.BtnState == 3 ?'#AD3F3F' : '#603B88'}`} />}
+                {props.tipo == 'PLANTA' && <Planta fill={props.BtnState === props.id ? 'white' : `${props.BtnState == 1 ? '#3B6388' : props.BtnState == 2 ? '#3B8863' : props.BtnState == 3 ?'#AD3F3F' : '#603B88'}`} />}
+                {props.tipo == 'FOGO' && <Fogo fill={props.BtnState === props.id ? 'white' : `${props.BtnState == 1 ? '#3B6388' : props.BtnState == 2 ? '#3B8863' : props.BtnState == 3 ?'#AD3F3F' : '#603B88'}`} />}
+            </div>
         </button>
     );
 }
