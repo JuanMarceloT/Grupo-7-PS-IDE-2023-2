@@ -1,5 +1,5 @@
 import Style from '../styles/home.module.css'
-import Style2 from '../styles/borders.module.css'
+import border from '../styles/borders.module.css'
 export default function Home() {
     return (
         <div className={Style.tituloimagem} id='home'>
@@ -7,7 +7,7 @@ export default function Home() {
             <div className={Style.titulo}>
                 <p>POKE</p>
                 <p><spam id="ide-vermelho">IDE</spam>X</p>
-                <a href='#form' id='start' className={Style2.pixelCornersDescription}>START</a>
+                <a href='#form' id='start' className={`${border.pixelCornersDescription} ${border.white}`}>START</a>
             </div>
         </div>
     )
