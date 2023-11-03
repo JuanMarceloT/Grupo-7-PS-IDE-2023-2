@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(90, 54, 125);
+    background-color: rgb(99, 62, 136);
     padding: 70px;
     height: 100vh;
     width: auto;
@@ -13,9 +13,9 @@
     height: auto;
 }
 .titulo{
-    font-size: 200px;
+    font-size: 150px;
     color: white;
     text-shadow: 6px 8px 0px black;
-    font-family: IDE;
+    font-family: IDE2;
     margin-top: 70px;
 }
