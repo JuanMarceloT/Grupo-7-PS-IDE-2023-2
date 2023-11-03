@@ -1,0 +1,53 @@
+.background{
+    background-color: rgb(90, 54, 125);
+    padding: 70px;
+    min-height: 100vh;
+    width: auto;
+    
+}
+.neko1{
+    max-width: 50vw;
+    height: auto;
+}
+
+.aboutConteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoConteiner{
+    background-color: #242424;
+    max-width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding-inline: 40px;
+    padding-block: 80px;
+    
+    border-left: 13px solid #B22559;
+
+}
+.imageStyle{
+    width:110px;
+}
+.infoSpan{
+    font-size: 36px;
+    line-height: 40.5px;
+    font-family: IDE;
+    color: white;
+}
+
+.titulo{
+    
+    font-size: 70px;
+    line-height: 70px;
+    font-family: IDE;
+    text-transform: uppercase;
+
+    color: white;
+    text-shadow: 2px 6px 0px black;
+    
+   
+}
