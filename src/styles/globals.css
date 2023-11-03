@@ -46,3 +46,7 @@ border-spacing: 0;
     font-family: 'uni05_53'; 
     src: url('../../public/fonts/uni05_53.ttf') format('truetype'); 
 }
+
+:root {
+    --main-color: #603B88;
+  }

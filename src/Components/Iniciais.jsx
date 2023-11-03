@@ -1,8 +1,9 @@
 import Style from "../styles/iniciais.module.css"
 import pokemons from "@/../content/pokemons.json";
-
+import borders from "@/styles/borders.module.css"
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { getBorderClassByColor, getBorderClassByType } from '../utils/borderUtils';
+
 
 export default function Iniciais(){
 
@@ -35,15 +36,15 @@ export default function Iniciais(){
             <div className={Style.mainText}>
             {tipo != null ? (<h1 style={{textAlign: 'initial', color: `${pokemons[tipo].mainColor}`}}>{tipo}</h1>) : <h1>CONHECENDO OS STARTERS</h1>}
             </div>
-            <div className={Style.mainContent} style={{border: `6px solid ${tipo != null ? 'transparent' : '#603B88'}`}}>
+            <div className={`${Style.mainContent} ${tipo == null ? `${borders.pixelCorners} ${borders.purple}` : null}`}>
             {tipo != null ? (
-                    <div className={Style.cardscontainer} style={{borderRight : '6px solid #603b8800'}}>
+                    <div className={Style.cardscontainer} >
                         <PokemonsCards info={pokemons[tipo]}/>
                     </div>
                 )
-                 : <div className={Style.nekoContainer} style={{borderRight : '6px solid #603B88'}}>
+                 : <div className={Style.nekoContainer} style={{bordersRight : '2px solid #603B88'}}>
                         <h1>
-                            ESCOLHA UM!
+                            <strong>ESCOLHA UM!</strong>
                         </h1>
                         <img src="./img/neko-dormindo.png" alt="" />
                     </div>
@@ -79,16 +80,16 @@ export default function Iniciais(){
                         <BtnTipos tipo="Fogo" id={3} BtnState={BtnState} setBtnState={setBtnState} menu={tipo != null ? 0 : 1} />
                 </div>
                 {tipo != null ? (
-                    <div className={Style.IDEButtonContainer} style={{width: '80%', margin: '0 auto'}}>
-                    <a style={{borderRadius: '35px', border: `6px solid ${pokemons[tipo].mainColor}`, color: 'black'}}>
+                    <div className={`${Style.IDEButtonContainer} ${borders.pixelCornersDescription} ${getBorderClassByType(tipo)}`} style={{width: '80%', margin: '0 auto'}}>
+                    <a  style={{margin: '20px 10px'}}>
                         {pokemons[tipo].description}
                     </a>
                 </div>
                 ) 
                 : 
                 
-                <div className={Style.IDEButtonContainer} >
-                    <a href="https://www.idejr.com.br/" style={{borderRadius: '15px'}}>
+                <div className={`${Style.IDEButtonContainer} ${borders.pixelCorners} ${borders.purple}`}>
+                    <a href="https://www.idejr.com.br/" >
                         <img src="./img/logo-pixelado-roxo.png" alt="IDE" />
                     </a>
                 </div>
@@ -113,7 +114,7 @@ function PokemonsCards({ info }){
     return (
             <>
                 {info.pokemons.map((pokemon) => (
-                    <div className={Style.card} style={{border: `2px solid ${info.mainColor}`}}>
+                    <div className={`${Style.card} ${borders.pixelCorners} ${getBorderClassByColor(info.mainColor)}`} >
                       <img src={pokemon.imgUrl} id={Style.cards}/>
                     </div>
                 ))}
