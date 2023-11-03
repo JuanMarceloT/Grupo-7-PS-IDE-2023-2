@@ -1,11 +1,14 @@
-import Style from '../styles/header.module.css'
-export default function Header(){
-    return(
-        <div className ={Style.header}>
-                <a href="#home">HOME</a>
-                <p>INICIAIS</p>
-                <p>SOBRE</p>
-                <a href="#form">FORMULARIO</a>
+import Style from '../styles/home.module.css'
+import border from '../styles/borders.module.css'
+export default function Home() {
+    return (
+        <div className={Style.tituloimagem} id='home'>
+            <img className = {Style.neko1} src="/img/neko-anotando.png" alt="logo ide"/>
+            <div className={Style.titulo}>
+                <p>POKE</p>
+                <p><spam id="ide-vermelho">IDE</spam>X</p>
+                <a href='#form' id='start' className={`${border.pixelCornersDescription} ${border.white}`}>START</a>
             </div>
+        </div>
     )
 }
