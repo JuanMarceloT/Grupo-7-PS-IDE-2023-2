@@ -7,7 +7,7 @@ export default function Home() {
             <div className={Style.titulo}>
                 <p>POKE</p>
                 <p><spam id="ide-vermelho">IDE</spam>X</p>
-                <a href='#form' id='start' className={`${border.pixelCornersDescription} ${border.white}`}>START</a>
+                <a href='#iniciais' id='start' className={`${border.pixelCornersDescription} ${border.white}`}>START</a>
             </div>
         </div>
     )
