@@ -49,6 +49,8 @@
     max-width:2.5vw; 
     height: auto; 
 }
+
+
 .nekoContainer img{
     width: 50%;   
 }
@@ -57,23 +59,30 @@
 } 
 
 .mainText{
-
     width: 100%;
 }
 .mainText h1 {
     width: 100%;
-    font-size: 70px;
+    font-size: 40px;
+    line-height: 20vh;
     text-align: center;
 }
 
 .textContainer {
     padding: 4vh 3vw;
+    margin-top: 20px;
 }
 .textContainer h1 {
-    font-size: 20px;
+    text-align: center;
+    
+    font-size: 10px;
     padding: 2vh 3vw;
+    line-height: 22px;
 }
 
+.textContainer img {
+    width: 3vw;
+}
 .bottomContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -98,7 +107,7 @@
 
 .IDEButtonContainer img{
     padding: 15px;
-    width: 12%;
+    width: 15%;
 }
 
 
@@ -119,7 +128,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 16vh;
+    min-height: 8vh;
+    max-height: 13vh;
 }
 .buttonsContainer button, .card {
     transition: transform 0.3s ease; 

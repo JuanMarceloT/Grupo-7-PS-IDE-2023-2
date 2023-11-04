@@ -3,45 +3,51 @@
     padding: 70px;
     min-height: 100vh;
     width: auto;
-    
+    display: flex;
 }
-.neko1{
-    max-width: 50vw;
-    height: auto;
+.neko1 {
+    width: 50vw;
+    height: 50vh;
+    padding-top: 20vh;
+    padding-left: 2vw;
 }
 
+
 .aboutConteiner{
+    padding-top: 5vh;
+    width: 60vw;
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
 .infoConteiner{
     background-color: #242424;
-    max-width: 50%;
+ 
     
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 100px;
     padding-inline: 40px;
-    padding-block: 80px;
+    padding-block: 30px;
     
     border-left: 13px solid #B22559;
 
 }
 .imageStyle{
-    width:110px;
+    width:5vw;
 }
 .infoSpan{
-    font-size: 36px;
-    line-height: 40.5px;
+    font-size: 15px;
+    line-height: 25px;
     font-family: IDE;
     color: white;
 }
 
 .titulo{
     
-    font-size: 70px;
+    font-size: 50px;
     line-height: 70px;
     font-family: IDE2;
     text-transform: uppercase;

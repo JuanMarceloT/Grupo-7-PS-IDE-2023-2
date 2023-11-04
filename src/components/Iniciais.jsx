@@ -9,8 +9,9 @@ import Planta from "@img/planta"
 
 export default function Iniciais(){
 
-    const [BtnState, setBtnState] = useState(1);
+    const [BtnState, setBtnState] = useState(null);
     const [tipo, setTipo] = useState(null);
+
 
     useEffect(() => {
       switch (BtnState) {
@@ -25,7 +26,7 @@ export default function Iniciais(){
           break;
         default:
           setTipo(null);
-          break;
+        break;
       }
     }, [BtnState]);
     let title = "";
@@ -44,7 +45,7 @@ export default function Iniciais(){
                         <PokemonsCards info={pokemons[tipo]}/>
                     </div>
                 )
-                 : <div className={Style.nekoContainer} style={{borderRight : '2px solid #603B88'}}>
+                 : <div className={Style.nekoContainer} style={{borderRight : '2px solid #603B88', fontSize: '10px'}}>
                         <h1>
                             ESCOLHA UM!
                         </h1>
@@ -72,7 +73,7 @@ export default function Iniciais(){
                         jornadas Pokémon. Conheça um pouco
                         mais sobre esses tipos!
                     </h1>
-                    <img src="./img/aspas.png" style={{float: 'right', transform: 'scaleX(-1)'}}/>
+                    <img src="./img/aspas.png" style={{float: 'right', transform: 'scaleX(-1)', alignItems: 'ends'}}/>
                 </div>}
             </div>
             <div className={Style.bottomContent}>
@@ -83,7 +84,7 @@ export default function Iniciais(){
                 </div>
                 {tipo != null ? (
                     <div className={`${Style.IDEButtonContainer} ${borders.pixelCornersDescription} ${getBorderClassByType(tipo)}`} style={{height: '60%', width: '80%', margin: '0 auto' , display: 'flex', justifyContent: 'center', alignItems:'center', color: 'black'}}>
-                    <a  style={{margin: '20px 10px', color: 'black', padding: '0px 20px', fontSize: '16px'}}>
+                    <a  style={{margin: '20px 10px', color: 'black', padding: '0px 20px', fontSize: '14px'}}>
                         {pokemons[tipo].description}
                     </a>
                 </div>
@@ -104,8 +105,8 @@ export default function Iniciais(){
 
 function BtnTipos(props) {
     return (
-        <button onClick={() => props.BtnState === props.id ? props.setBtnState(null) : props.setBtnState(props.id)} style={{ color: props.menu != 1 ? 'transparent' : '#603B88', width: '100%', margin: '30px 10px'}}>
-            <p style={{fontSize: '20px'}}>{props.tipo}</p>
+        <button onClick={() => props.BtnState === props.id ? props.setBtnState(null) : props.setBtnState(props.id)} style={{ color: props.menu != 1 ? 'transparent' : '#603B88', userSelect: props.menu != 1 ? 'none' : 'auto', width: '100%', margin: '30px 10px'}}>
+            <p style={{fontSize: '10px', margin: '0px 10px'}}>{props.tipo}</p>
             <div className={`${borders.pixelCorners} ${props.BtnState == null ? borders.purple : getBorderClassByType(`${props.BtnState == 1 ? 'AGUA' : props.BtnState == 2 ? 'PLANTA' : 'FOGO'}`)}`} style={{height: '6vh',width: '90%', background: `${props.BtnState === props.id ? `${pokemons[props.tipo].mainColor}` : 'white'}`, display: 'flex', justifyContent: 'center', alignItems:'center'}}>
                 {props.tipo == 'AGUA' && <Agua fill={props.BtnState === props.id ? 'white' : `${props.BtnState == 1 ? '#3B6388' : props.BtnState == 2 ? '#3B8863' : props.BtnState == 3 ?'#AD3F3F' : '#603B88'}`} />}
                 {props.tipo == 'PLANTA' && <Planta fill={props.BtnState === props.id ? 'white' : `${props.BtnState == 1 ? '#3B6388' : props.BtnState == 2 ? '#3B8863' : props.BtnState == 3 ?'#AD3F3F' : '#603B88'}`} />}

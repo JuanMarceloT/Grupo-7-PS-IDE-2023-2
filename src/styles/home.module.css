@@ -9,11 +9,11 @@
     gap: 16px;
 }
 .neko1{
-    max-width: 50vw;
+    max-width: 30vw;
     height: auto;
 }
 .titulo{
-    font-size: 145px;
+    font-size: 80px;
     font-weight: 400;
     color: white;
     text-shadow: 6px 8px 0px black;
