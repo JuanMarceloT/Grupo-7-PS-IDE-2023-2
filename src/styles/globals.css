@@ -18,9 +18,11 @@ font: inherit;
 vertical-align: baseline;
 scroll-behavior: smooth;
 }
-
+:root {
+    --main-color :#603B88;
+}
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nvav, section {
 display: block;
 }
 body {
